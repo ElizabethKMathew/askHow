@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<script src="register_validate.js"></script>
+</head>
+<body bgcolor="pink">
+<div id="header">
+<img src="../img/logo2.jpg" alt="logo" width="123px" height="100px">
+				<h1>AskHow</h1>
+				
+				</div>
+				<div id="menu">
+					<a href="index.html">Home</a>
+					
+					<a href="registration.html">Registration</a>
+					<a href="loginpage.html">Login</a>
+				
+	</div><br>
+<div id="head">
+<h3>Register your profile here</h3>
+</div>
+
+<div id="body">
+<div id="form">
+	<form name="registration" onSubmit="return formValidation();">
+	<div id="table">
+	<table align="center">
+		<tr>
+			<td align="left">First Name</td>
+			<td><input type="text" name="first_name"></td>
+		</tr>
+		<tr>
+			<td align="left">Last Name</td>
+			<td><input type="text" name="last_name"></td>
+		</tr>
+		<tr>
+			<td align="left">Gender</td>
+			<td align="left"><input type="radio" name="gender" value="male">Male
+    						<input type="radio" name="gender" value="female">Female</td>
+		</tr>
+		<tr>
+			<td align="left">Country</td>
+			<td align="left"><select name="country">
+				<option value="select">Select</option>
+				<option value="india">India</option>
+				<option value="usa">USA</option>
+				<option value="canada">Canada</option>
+			</select>
+		</tr>
+		<tr>
+			<td align="left">Email</td>
+			<td><input type="email" name="email"></td>
+		</tr>
+		<tr>
+			<td align="left">Password</td>
+			<td><input type="password" name="pwd"></td>
+		</tr>
+		<tr>
+			<td align="left">Confirm Password</td>
+			<td><input type="password" name="cnfrm_pwd"></td>
+
+		
+		<tr>
+			<td>Languages Known</td>
+			<td align="left"><input type="checkbox" name="language" value="html">HTML
+   			<input type="checkbox" name="language" value="php">PHP
+    		<input type="checkbox" name="language" value="c">C
+    		</td></tr>
+		
+		<tr></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr>
+			<td align="center"><input type="submit" value="submit" name="submit"></td>
+			<td align="center"><input type="reset" value="reset" name="reset"></td>
+		</tr>
+
+		
+	</table>
+</div>
+</form>
+</div>
+<div id="footer">
+			<p>
+				Copyright @ <a href="/" target="_blank">sampleSite.com</a>
+			</p>
+		</div></body>
+</html>

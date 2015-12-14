@@ -1,0 +1,51 @@
+
+
+#header {
+    background-color:white;
+    color:white;
+    margin:auto;
+    text-align:center;
+    padding:10px;
+    height:100px;
+    width:100%;
+}
+#head{
+	
+	text-align: center;
+	color: black;
+	font-weight: bold;
+}	
+#form{
+	text-align:center;
+	color:black;
+}
+
+#footer{
+	position: fixed;
+	bottom: 0px;
+	padding: 5px;
+	background-color:white;
+	width: 100%;
+}
+	#footer p{
+		text-align: center;
+		font-size: 100%;
+		color: black;
+	}
+	img{float:left;}
+	h1   {color:green;text-align:left;}
+	h2{color:black;text-align: left;}
+	#menu
+	{
+		float:left;
+		padding:5px;
+		background-color: grey;
+		width:100%;
+	}
+	
+	a{
+		color: blue;
+		padding: 10px;
+		
+				}
+	
