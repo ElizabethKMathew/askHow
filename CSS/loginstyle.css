@@ -1,5 +1,9 @@
-
-
+#head{
+	
+	text-align: center;
+	color: #003399;
+	font-weight: bold;
+}	
 #header {
     background-color:#0099CC;
     color:white;
@@ -9,44 +13,32 @@
     height:100px;
     width:100%;
 }
-#head{
-	
-	text-align: center;
-	color: black;
-	font-weight: bold;
-}	
-#form{
-	text-align:center;
+#results{
 	color:black;
-}
+	font-size: 40px;
+	text-align: center;
+	font-family:Serif, Times New Roman, Georgia,;
 
+}
 #footer{
 	position: fixed;
 	bottom: 0px;
 	padding: 5px;
 	background-color:white;
 	width: 100%;
+	color:black;
 }
-	#footer p{
+#footer p{
 		text-align: center;
 		font-size: 100%;
 		color: black;
 	}
-	
-	#menu
+#menu
 	{
 		float:left;
-		padding:5px;
-		background-color: #ADD8E6;
+		padding:10px;
+		background-color:#ADD8E6;
 		width:100%;
 	}
-	
-	a{
-		color: blue;
-		padding: 10px;
-		
-	}
-	body{background-color: #DDECEF}
-	img{float:left;}
-	
-	h2{color:black;text-align: left;}
+body{background-color: #DDECEF}
+img{float:left;}
