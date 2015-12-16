@@ -11,7 +11,7 @@ function formValidation()
 		}  
 		else
 		{
-			location.href="../HTML/welcome.html?userEmail="+usermail.value;
+			location.href="../HTML/index.html?userEmail="+usermail.value;
 			alert("Successfully submitted");
 			return true;  
 		}

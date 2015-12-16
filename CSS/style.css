@@ -40,6 +40,13 @@
 		background-color: #ADD8E6;
 		width:100%;
 	}
+	#results{
+	color:black;
+	font-size: 40px;
+	text-align: center;
+	font-family:Serif, Times New Roman, Georgia,;
+
+}
 	
 	a{
 		color: blue;
@@ -47,6 +54,6 @@
 		
 	}
 	body{background-color: #DDECEF}
-	img{float:left;}
+ 	img{float:left;}
+ 	h2{color:black;text-align: left;}
 	
-	h2{color:black;text-align: left;}

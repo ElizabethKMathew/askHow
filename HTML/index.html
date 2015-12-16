@@ -2,6 +2,22 @@
 <html>
 <head>
 <link rel="stylesheet" href="../CSS/style.css" type="text/css" />
+<script type="text/javascript">
+	function getQuerystring(){
+         var q=document.location.toString();
+         q=q.split("?");
+         q=q[1].split("&");
+         var str=""
+         for(i=0;i<q.length;i++){
+           tmp=q[i].split("=");
+           tmp=tmp[1].split("@");
+           str+=" Hai "+tmp[0]}
+         document.getElementById("results").innerHTML=str
+                      }
+    onload=function(){
+           getQuerystring();
+                     }
+     </script>
 </head>
 
 <body> 
@@ -20,14 +36,13 @@
 				
 	</div>
 	<br><br>
-
-			<h2>Welcome to our Home Page</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pellentesque faucibus mauris ac rhoncus. Nam dictum viverra euismod. Cras id lorem ut turpis semper auctor. Suspendisse potenti. Ut risus orci, placerat ac tempus non, varius sed justo.</p>
+			<h2>Welcome to AskHow</h2>
+			<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pellentesque faucibus mauris ac rhoncus. Nam dictum viverra euismod. Cras id lorem ut turpis semper auctor. Suspendisse potenti. Ut risus orci, placerat ac tempus non, varius sed justo.</p>
 
 			<p>In hac habitasse platea dictumst. Donec tincidunt dolor malesuada sapien convallis consequat. Vestibulum convallis viverra orci, nec feugiat elit commodo sed. Curabitur sed turpis sed enim tristique rhoncus. Vivamus rhoncus orci sed felis auctor convallis. Nullam vehicula hendrerit diam nec lacinia.</p>
 
-			<p>Pellentesque eget libero in nisl tincidunt accumsan ac et nisi. Morbi ultrices quam id eros gravida at auctor nunc lacinia. Pellentesque justo urna, eleifend ac fermentum non, placerat ac felis. In at velit leo, sit amet luctus magna. Phasellus a mauris vel orci faucibus fringilla. Phasellus viverra est ac metus laoreet ultricies. Praesent in odio ac nulla pretium ultricies.</p>
-
+			<p>Pellentesque eget libero in nisl tincidunt accumsan ac et nisi. Morbi ultrices quam id eros gravida at auctor nunc lacinia. Pellentesque justo urna, eleifend ac fermentum non, placerat ac felis. In at velit leo, sit amet luctus magna. Phasellus a mauris vel orci faucibus fringilla. Phasellus viverra est ac metus laoreet ultricies. Praesent in odio ac nulla pretium ultricies.</p>-->
+			<div id="results"></div>
 			<br><br><br>
 
 	<div id="footer">
