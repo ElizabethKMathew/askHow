@@ -5,17 +5,24 @@
 <script type="text/javascript">
 	function getQuerystring(){
          var q=document.location.toString();
-         q=q.split("?");
-         q=q[1].split("&");
-         var str=""
-         for(i=0;i<q.length;i++){
-           tmp=q[i].split("=");
-           tmp=tmp[1].split("@");
-           str+=" Hai "+tmp[0]}
-         document.getElementById("results").innerHTML=str
-                      }
-    onload=function(){
-           getQuerystring();
+          if(q[1]){
+q=q[1].split("&");
+q=q[0].split("=");
+q=q[1];
+q=q.split("@");
+q=q[0];
+sessionStorage.a=q;
+}
+}
+         getQuerystring();              }
+    window.onload=function(){
+    	if(sessionStorage.a){
+document.getElementById("results").innerHTML='Hai'+" "+sessionStorage.a;
+}else{
+window.location.href = "./login.html";
+}
+};
+          
                      }
      </script>
 </head>
@@ -36,7 +43,7 @@
 				
 	</div>
 	<br><br>
-			<h2>Welcome to AskHow</h2>
+			
 			<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pellentesque faucibus mauris ac rhoncus. Nam dictum viverra euismod. Cras id lorem ut turpis semper auctor. Suspendisse potenti. Ut risus orci, placerat ac tempus non, varius sed justo.</p>
 
 			<p>In hac habitasse platea dictumst. Donec tincidunt dolor malesuada sapien convallis consequat. Vestibulum convallis viverra orci, nec feugiat elit commodo sed. Curabitur sed turpis sed enim tristique rhoncus. Vivamus rhoncus orci sed felis auctor convallis. Nullam vehicula hendrerit diam nec lacinia.</p>
