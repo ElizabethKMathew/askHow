@@ -5,6 +5,7 @@
 <script type="text/javascript">
 	function getQuerystring(){
          var q=document.location.toString();
+          q=q.split("?");
           if(q[1]){
 q=q[1].split("&");
 q=q[0].split("=");
@@ -14,16 +15,16 @@ q=q[0];
 sessionStorage.a=q;
 }
 }
-         getQuerystring();              }
+         getQuerystring();              
     window.onload=function(){
     	if(sessionStorage.a){
 document.getElementById("results").innerHTML='Hai'+" "+sessionStorage.a;
 }else{
-window.location.href = "./login.html";
+window.location.href = "../HTML/login.html";
 }
 };
           
-                     }
+                     
      </script>
 </head>
 
